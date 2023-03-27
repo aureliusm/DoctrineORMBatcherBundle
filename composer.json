@@ -11,7 +11,7 @@
     "require": {
         "php": ">=7.2 || 8.0 || 8.1",
         "doctrine/doctrine-bundle": "^1.0 || ^2.0",
-        "setono/doctrine-orm-batcher": "^0.6",
+        "setono/doctrine-orm-batcher": "dev-dependency-fixes",
         "symfony/config": "^4.4 || ^5.0 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
         "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0"
@@ -53,5 +53,11 @@
         "check-style": "vendor/bin/ecs check --ansi src/ tests/",
         "fix-style": "vendor/bin/ecs check --fix --ansi src/ tests/",
         "test": "vendor/bin/phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/aureliusm/doctrine-orm-batcher.git"
+        }
+    ]
 }
